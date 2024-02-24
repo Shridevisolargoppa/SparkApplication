@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Register.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Register.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">Validation</span><span class="s2">.</span><span class="s1">TokenValidation</span><span class="s2">.</span><span class="s1">model</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">jdk</span><span class="s2">.</span><span class="s1">jfr</span><span class="s2">.</span><span class="s1">DataAmount</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">lombok</span><span class="s2">.</span><span class="s1">AllArgsConstructor</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">lombok</span><span class="s2">.</span><span class="s1">Data</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">lombok</span><span class="s2">.</span><span class="s1">NoArgsConstructor</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">bson</span><span class="s2">.</span><span class="s1">types</span><span class="s2">.</span><span class="s1">ObjectId</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">springframework</span><span class="s2">.</span><span class="s1">data</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">Id</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">springframework</span><span class="s2">.</span><span class="s1">data</span><span class="s2">.</span><span class="s1">mongodb</span><span class="s2">.</span><span class="s1">core</span><span class="s2">.</span><span class="s1">mapping</span><span class="s2">.</span><span class="s1">Document</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">lang</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">Documented</span><span class="s2">;</span>
+
+<span class="s1">@Data</span>
+<span class="s1">@AllArgsConstructor</span>
+<span class="s1">@NoArgsConstructor</span>
+<span class="s1">@Document</span>
+<span class="s0">public class </span><span class="s1">Register</span>
+<span class="s2">{</span>
+    <span class="s1">@Id</span>
+    <span class="s1">ObjectId _id</span><span class="s2">;</span>
+    <span class="s0">int </span><span class="s1">registeId</span><span class="s2">;</span>
+    <span class="s1">String name</span><span class="s2">;</span>
+    <span class="s1">String password</span><span class="s2">;</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
